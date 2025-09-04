@@ -9,16 +9,12 @@
   <body>
     <!--Header-->
     <header class="header">
-      <a href="index.html">
-        <img src="images/logo.png" alt="Jonell's Logo" class="logo" />
-      </a>
-      Jonell Balanay
+      <a href="index.html"> Jonell Balanay</a>
       <!--Navigation bar-->
       <nav class="navbar">
         <ul class="nav-link">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog/te-houtaewa-template.html">Blogs</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#blog-preview">BLOGS</a></li>
         </ul>
       </nav>
     </header>
@@ -26,18 +22,159 @@
     <main>
       <!--Hero Banner-->
       <section class="hero">
-        <h1>Kia ora Taiao! (Hello World!)</h1>
-        <p>This is the beginning of my website home page!.</p>
-        <p>It will eventually contain a list of links to all my blogs.</p>
+        <div class="container">
+          <div class="hero-content columns">
+            <div class="column is-half">
+              <div class="content">
+                <h4>Kia ora Taiao!</h4>
+                <h1>I'm Jonell</h1>
+                <p class="has-text-centered">
+             <ion-icon name="warning" size="large" class="has-text-danger"></ion-icon>
+                 <marquee behavior="alternate"> This is the beginning of my website home page!</marquee>
+                 <marquee behavior="alternate"> It will
+                  eventually contain a list of links to all my blogs.</marquee>
+              
+                  <h3 class="has-text-right">Based in New Zealand</h3>
+                </p>
+                
+                <a href="#blog-preview">Read my blogs</a>
+                <a href="#about">Who am i?</a>
+              </div>
+            </div>
+            <div class="column is-half">
+              <figure class="image is-4by3">
+                <img
+                  src="/assets/images/undraw_programming_65t2.svg"
+                  alt="programming clipart"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
       </section>
+
       <!--Blog Preview-->
-      <section id="blog-preview">My Blog</section>
+      <section class="container" id="blog-preview">
+        <h2 class="title">My Blogs</h2>
+        <article class="card">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img
+                src="/assets/images/undraw_unexpected-friends_42mc.svg"
+                alt="goofy clipart"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="subtitle has-text-centered">The Story of Te Houtaewa</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex
+              sapien vitae pellentesque sem placerat in id. Placerat in id
+              cursus mi pretium tellus duis. Pretium tellus duis convallis
+              tempus leo eu aenean...<a
+                href="blog/te-houtaewa-template.html"
+                class="link is-link"
+                >Read More</a
+              >
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img
+                src="/assets/images/undraw_static-website_x3tn(1).svg"
+                alt="webdesigning clipart"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="subtitle has-text-centered">
+              Classes vs. IDs in HTML/CSS
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex
+              sapien vitae pellentesque sem placerat in id. Placerat in id
+              cursus mi pretium tellus duis. Pretium tellus duis convallis
+              tempus leo eu aenean...<a href="#" class="link is-link"
+                >Read More</a>
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img
+                src="/assets/images/undraw_profile_d7qw.svg"
+                alt="webdesigning clipart"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="subtitle has-text-centered">
+              Identity, Values, and Strengths
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex
+              sapien vitae pellentesque sem placerat in id. Placerat in id
+              cursus mi pretium tellus duis. Pretium tellus duis convallis
+              tempus leo eu aenean...<a href="#" class="link is-link"
+                >Read More</a
+              >
+            </p>
+          </div>
+        </article>
+      </section>
+
       <!--About -->
-      <section id="about">About Me</section>
+      <section id="about">
+        <div class="container">
+          <h2 class="title">Meet Jonell</h2>
+          <div class="columns is-vcentered">
+            <div class="column is-half">
+              <figure class="image is-4by3">
+                <img
+                  src="/assets/images/KYUNGSOO_.jpg"
+                  alt="Jonell's Profile picture"
+                />
+              </figure>
+            </div>
+            <div class="column is-half">
+              <div class="content">
+                <p>
+                  Kia ora! Im Jonell, originally from Philippines and now currently based in Taupō I'm joining Dev Academy as a refresher it peaks my interest of somewhat familiar to me with the tech they use, but my skills have become outdated over the years, leaving me unsure about pursuing tech roles. 
+                </p>
+              </div>
+            </div>
+        </div>
+      </section>
     </main>
+
     <!--Footer-->
-    <footer>
-      <p>&copy; 2024 Jonell Balanay</p>
+    <footer class="footer">
+      <div class="content has-text-centered"><p>
+        <a href="#">ABOUT</a> |
+               <a href="#blog-preview">BLOG</a></p>
+               <div class="social-icons">
+                connect with me
+                <a href="#"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-github" size="large"></ion-icon></a>
+                <a href="#"><ion-icon name="mail" size="large"></ion-icon></a>
+               </div>
+        <p>&copy; 2025 JONELL</p>
+      </div>
     </footer>
   </body>
 </html>
+<!--script for ionic icon-->
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
