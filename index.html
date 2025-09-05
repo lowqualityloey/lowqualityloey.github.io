@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,13 +9,25 @@
 
   <body>
     <!--Navigation bar-->
-    <nav class="navbar" role="navigation">
-      <a href="index.html"> Jonell Balanay</a>
-
-      <!-- <ul class="nav-link">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#blog-preview">BLOGS</a></li>
-        </ul> -->
+    <nav class="navbar is-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-item">
+            <ion-icon
+              name="qr-code"
+              size="large"
+              class="navbar-logo"
+            ></ion-icon>
+            <a href="index.html" class="title is-4 mt-1"> Jonell Balanay</a>
+          </span>
+        </div>
+        <div class="navbar-menu is-active">
+          <div class="navbar-end">
+            <a href="#about" class="navbar-item">About</a>
+            <a href="#blog-preview" class="navbar-item">Blogs</a>
+          </div>
+        </div>
+      </div>
     </nav>
     <main>
       <!--Hero Banner-->

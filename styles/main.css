@@ -1,15 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css';
+@import 'https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css';
 
 body {
   font-family: 'Roboto', sans-serif;
   font-optical-sizing: auto;
-  line-height: 1.6;
+  line-height: 1.5;
   color: black;
+}
+.navbar-brand .title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.navbar-brand .navbar-logo {
+  color: #17b8a6;
+}
+.navbar-menu .navbar-end .navbar-item {
+  font-weight: 600;
+}
+.hero {
+  background: #eeecec;
 }
 .footer {
   background: #17b8a6;
 }
-.hero {
-  background: #eeecec;
+
+@media only screen and (max-width: 600px) {
+  /* make everything center .navbar-brand .title*/
+  .navbar-brand {
+    justify-content: center;
+  }
+  .navbar-brand .title {
+    font-size: 1.6rem;
+  }
 }
