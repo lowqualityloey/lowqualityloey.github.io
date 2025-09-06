@@ -1,0 +1,57 @@
+#blog {
+  margin-top: 3.8rem;
+  margin-bottom: 3.5rem;
+}
+#blog .card {
+  padding-top: 2rem;
+}
+#blog .card-image {
+  max-width: 28rem;
+  margin: auto;
+}
+#blog .card-content {
+  padding: 0 5rem 6rem 5rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+#blog .card-content .subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 5rem;
+}
+#blog .date-published {
+  font-size: 1rem;
+  color: #555555;
+  margin-top: 7rem;
+}
+
+.page-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.page-heading h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0b5048;
+}
+
+@media only screen and (max-width: 600px) {
+  #blog {
+    margin-top: 8.5rem;
+    margin-bottom: 2rem;
+  }
+  #blog .card-content {
+    padding: 0 1.5rem 3rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  #blog .card-content .subtitle {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  #blog .date-published {
+    font-size: 0.9rem;
+  }
+  .page-heading h1 {
+    font-size: 2rem;
+  }
+}
