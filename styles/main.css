@@ -84,7 +84,22 @@ body {
 }
 
 .footer {
-  background: #17b8a6;
+  background: #0b5048;
+}
+.footer .content p,
+.footer .content a {
+  color: #fafafa;
+  font-weight: 600;
+}
+.footer .content a:hover {
+  color: #17b8a6;
+}
+.footer .social-icons a {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.footer .social-icons a:hover {
+  color: #17b8a6;
 }
 
 @media only screen and (max-width: 600px) {
