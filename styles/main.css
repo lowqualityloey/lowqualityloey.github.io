@@ -17,19 +17,40 @@ body {
 .navbar-menu .navbar-end .navbar-item {
   font-weight: 600;
 }
+
 .hero {
   background: #eeecec;
 }
+.hero .container {
+  padding: 1.2rem;
+}
+.hero .column .content {
+  margin-top: 15%;
+}
+.hero .column .content .title,
+.hero .column .content .subtitle {
+  line-height: 1rem;
+}
+
 .footer {
   background: #17b8a6;
 }
 
 @media only screen and (max-width: 600px) {
-  /* make everything center .navbar-brand .title*/
   .navbar-brand {
     justify-content: center;
   }
   .navbar-brand .title {
     font-size: 1.6rem;
+  }
+  .hero {
+    margin-top: 6rem;
+  }
+  .hero .column .content {
+    margin-top: 0rem;
+  }
+  .hero .column .content .content {
+    /*make center*/
+    padding: auto 0;
   }
 }

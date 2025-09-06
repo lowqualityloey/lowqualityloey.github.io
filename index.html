@@ -10,7 +10,7 @@
   <body>
     <!--Navigation bar-->
     <nav class="navbar is-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container is-max-widescreen">
         <div class="navbar-brand">
           <span class="navbar-item">
             <ion-icon
@@ -36,13 +36,26 @@
           <div class="hero-content columns">
             <div class="column is-half">
               <div class="content">
-                <h4>Kia ora Taiao!</h4>
-                <h1>I'm Jonell</h1>
-                <h3 class="has-text-right">Based in New Zealand</h3>
-                This is the beginning of my website home page! It will
-                eventually contain a list of links to all my blogs.
-                <a href="#blog-preview">Read my blogs</a>
-                <a href="#about">Who am i?</a>
+                <h4 class="subtitle is-5">Kia ora Taiao!</h4>
+                <h1 class="title is-1">I'm Jonell</h1>
+                <h3 class="subtitle has-text-right mr-6">
+                  Based in New Zealand
+                </h3>
+                <p>
+                  This is the beginning of my website home page! It will
+                  eventually contain a list of links to all my blogs.
+                </p>
+                <div class="content has-text-right m-5">
+                  <button
+                    class="button is-primary is-active has-text-white"
+                    href="#blog-preview"
+                  >
+                    Read my blogs
+                  </button>
+                  <button class="button is-black is-outlined" href="#about">
+                    Who am i?
+                  </button>
+                </div>
               </div>
             </div>
             <div class="column is-half">
@@ -58,7 +71,7 @@
       </section>
 
       <!--Blog Preview-->
-      <section class="container" id="blog-preview">
+      <section class="container is-max-widescreen" id="blog-preview">
         <h2 class="title">My Blogs</h2>
         <article class="card">
           <div class="card-image">
@@ -136,7 +149,7 @@
 
       <!--About -->
       <section id="about">
-        <div class="container">
+        <div class="container is-max-widescreen">
           <h2 class="title">Meet Jonell</h2>
           <div class="columns is-vcentered">
             <div class="column is-half">
