@@ -23,14 +23,29 @@
   color: #555555;
   margin-top: 7rem;
 }
+#blog .references {
+  font-size: 1rem;
+  color: #555555;
+  font-style: italic;
+}
+#blog .references a:hover {
+  text-decoration: underline;
+}
 
 .page-heading {
   text-align: center;
   margin-bottom: 2rem;
 }
 .page-heading h1 {
-  font-size: 3rem;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 4rem;
   font-weight: 700;
+  color: #0b5048;
+  font-family: 'Caveat', cursive;
+  font-optical-sizing: auto;
+}
+.page-body .title {
   color: #0b5048;
 }
 
