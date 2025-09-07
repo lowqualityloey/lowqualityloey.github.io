@@ -43,10 +43,35 @@ body {
   font-family: 'Caveat', cursive;
   font-optical-sizing: auto;
 }
-
-#blog-preview {
+.hero #blog-preview {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.hero .hero-blog-link {
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: #139485;
+  padding: 0.6rem 1rem;
+  color: #ffffff;
+  margin-right: 0.5rem;
+}
+.hero .hero-blog-link:hover {
+  background: #0b5048;
+  text-decoration: none;
+  color: #ffffff;
+}
+.hero .hero-about-link {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  border: 0.12rem solid #0b5048;
+  color: #0b5048;
+  margin-right: 0.5rem;
+}
+.hero .hero-about-link:hover {
+  background: #0b5048;
+  text-decoration: none;
+  color: #ffffff;
 }
 #blog-preview .card {
   box-shadow: 0 0.1rem 0.1rem #0a0a0a1a, #0a0a0a1a;
@@ -66,11 +91,12 @@ body {
 }
 #blog-preview .card-content p a {
   font-weight: 600;
-  color: #17b8a6;
+  color: #000000;
+  text-decoration: underline;
 }
 #blog-preview .card-content p a:hover {
-  color: #139485;
-  text-decoration: underline;
+  color: #0e685d;
+  text-decoration: none;
 }
 
 #about {
