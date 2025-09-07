@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jonell Balanay - Web Developer & Tech Enthusiast from New Zealand. Read my blogs on web development at Dev Academy."
+    />
+    <title>Jonell's - The Story of Te Houtaewa</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icons/code-slash.svg"
+    />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/blog.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <nav class="navbar is-fixed-top" role="navigation">
+      <div class="container is-max-widescreen">
+        <div class="navbar-brand">
+          <span class="navbar-item">
+            <ion-icon
+              name="qr-code"
+              size="large"
+              class="navbar-logo"
+            ></ion-icon>
+            <a href="../index.html" class="title is-4 mt-1"> Jonell Balanay</a>
+          </span>
+        </div>
+        <div class="navbar-menu is-active">
+          <div class="navbar-end">
+            <a href="../index.html#about" class="navbar-item">About</a>
+            <a href="../index.html#blog-preview" class="navbar-item">Blogs</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <article id="blog" class="container is-max-widescreen">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <img
+              src="/assets/images/undraw_static-website_x3tn(1).svg"
+              alt="static-website clipart"
+            />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="page-heading">
+            <h1 class="title">Classes vs. IDs in HTML/CSS</h1>
+            <span class="subtitle">
+              <h2>
+                Āhea, me pēhea te whakamahi pai i ngā kara me ngā tuakiri CSS
+              </h2>
+              <p>
+                <em>When and how to use CSS classes and IDs effectively</em>
+              </p>
+            </span>
+            <span class="date-published">7 September 2025</span>
+          </div>
+          <div class="page-body content has-text-justified">
+            <h3 class="title has-text-centered">Basic Concepts of Selectors</h3>
+            <div class="level ml-5 mr-5 pt-4">
+              <div class="level-item">
+                <div class="container">
+                  <h5 class="title mb-4 has-text-left">CSS Classes</h5>
+                  <div class="container has-background-warning-light p-4">
+                    <p class="mb-1">CSS Syntax:</p>
+                    <code class="pt-1">.class-name { }</code>
+                    <p class="mb-1 mt-4">HTML Usage</p>
+                    <code class="pt-1">class="class-name"</code>
+                  </div>
+                  <div class="content mt-2 is-italic">
+                    <p>✓ Reusable across multiple elements</p>
+                    <p>✓ Lower CSS specificity</p>
+                    <p>✓ Perfect for styling components</p>
+                    <p>✓ Can have multiple classes per element</p>
+                  </div>
+                </div>
+              </div>
+              <div class="level-item">
+                <div class="container">
+                  <h5 class="title mb-4 has-text-left">CSS IDs</h5>
+                  <div class="container has-background-warning-light p-4">
+                    <p class="mb-1">CSS Syntax:</p>
+                    <code class="pt-1">#id-name { }</code>
+                    <p class="mb-1 mt-4">HTML Usage</p>
+                    <code class="pt-1">id="id-name"</code>
+                  </div>
+                  <div class="content mt-2 mb-1 is-italic">
+                    <p>✓ Unique - only one per page</p>
+                    <p>✓ Higher CSS specificity</p>
+                    <p>✓ Great for JavaScript targeting</p>
+                    <p>✓ Used for form labels & anchors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p>
+              When working on web projects,
+              <b>CSS classes and IDs</b>
+              both used to style HTML elements, but they serve different
+              purposes. <b>IDs</b> are like <b>Student Numbers</b> Totally
+              unique to one person. while <b>Classes</b> are like group names.
+              Lots of people can be in the “Developer” class. So, if there's a
+              specific section or element that needs distinct styling or
+              behavior, an ID is the go-to choice, otherwise if you want share
+              the styles or behavior to the multiple element or groups, Classes
+              is common choice for being reusable selector.
+            </p>
+            <img src="/assets/images/id-vs-class.jpg" />
+            <h3 class="title has-text-centered">CSS Specificity Hierarchy</h3>
+            <p>
+              We thought <b>CSS IDs</b> were a top priority for modifying an
+              object, but they’re really not. <b>Inline styles</b> (ex.
+              <code>style="..."</code>) have the highest priority because the
+              style is right there on the element itself, which the browser
+              reads immediately. Then <b>CSS IDs</b> (ex. <code>#header</code>)
+              come after because they identify the element uniquely, but with
+              less priority than inline styles since those are more specific.
+            </p>
+            <p>
+              Next are <b>CSS classes </b> (ex. <code>.button{ }</code>), which
+              target multiple elements. They have a moderate level of
+              specificity while staying flexible for reusing styles. Lastly,
+              <b>Element selectors</b> (ex. <code>div{ }, p{ }</code>) have the
+              lowest specificity because they target broad groups and don’t
+              differentiate individual elements.
+            </p>
+            <div class="columns has-text-left">
+              <div class="column is-6">
+                <h6 class="title mt-2">Quick Insight</h6>
+                <ul class="subtitle">
+                  <li><b>Style with classes</b></li>
+                  <li><b>Target with IDs</b> (for JS)</li>
+                  <li><b>Avoid using IDs in your stylesheets</b></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p class="subtitle">
+            <a href="/#about">ABOUT</a>
+            <ion-icon size="small" name="caret-down-outline"></ion-icon>
+            <a href="/#blog-preview">BLOG</a>
+          </p>
+          <p class="subtitle">connect with me</p>
+          <div class="title social-icons">
+            <a href="https://www.linkedin.com/in/itsjonellmb/"
+              ><ion-icon name="logo-linkedin" size="large"></ion-icon
+            ></a>
+            <a href="https://github.com/lowqualityloey"
+              ><ion-icon name="logo-github" size="large"></ion-icon
+            ></a>
+            <a href="mailto:itsjonellmb@gmail.com"
+              ><ion-icon name="mail" size="large"></ion-icon
+            ></a>
+          </div>
+          <p>&copy; 2025 JONELL</p>
+        </div>
+      </div>
+    </footer>
+    <!-- this is a comment. -->
+  </body>
+</html>
+<!--script for ionic icon-->
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>

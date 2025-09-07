@@ -43,7 +43,7 @@ body {
   font-family: 'Caveat', cursive;
   font-optical-sizing: auto;
 }
-.hero #blog-preview {
+#blog-preview {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
