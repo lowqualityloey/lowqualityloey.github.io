@@ -31,6 +31,9 @@
 #blog .references a:hover {
   text-decoration: underline;
 }
+#blog .table {
+  margin: auto;
+}
 
 .page-heading {
   text-align: center;

@@ -125,12 +125,22 @@ body {
 .footer .content a:hover {
   color: #17b8a6;
 }
+.footer .social-links {
+  line-height: 0rem;
+}
 .footer .social-icons a {
   color: #ffffff;
   font-size: 1.5rem;
 }
 .footer .social-icons a:hover {
   color: #17b8a6;
+}
+
+.footer .social-icons .breadcrumb ul .mt-1 {
+  margin-top: 0.09rem;
+}
+.footer .social-icons .breadcrumb ul li a {
+  margin-right: -0.2rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -180,5 +190,17 @@ body {
     background: none;
     margin-bottom: 3rem;
     padding: 0rem;
+  }
+  .footer .breadcrumb.is-left ul {
+    justify-content: center;
+    margin: auto;
+  }
+  .footer .social-links {
+    margin-top: 2rem;
+    text-align: center !important;
+  }
+  .footer .breadcrumb.is-right ul {
+    justify-content: center !important;
+    margin: auto;
   }
 }
