@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jonell Balanay - Web Developer & Tech Enthusiast from New Zealand. Read my blogs on web development at Dev Academy."
+    />
+    <title>Jonell's - The Story of Te Houtaewa</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icons/code-slash.svg"
+    />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/blog.css" rel="stylesheet" type="text/css" />
+    <!--imported online css package-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar is-fixed-top" role="navigation">
+      <div class="container is-max-widescreen">
+        <div class="navbar-brand">
+          <span class="navbar-item">
+            <ion-icon
+              name="qr-code"
+              size="large"
+              class="navbar-logo"
+            ></ion-icon>
+            <a href="../index.html" class="title is-4 mt-1"> Jonell Balanay</a>
+          </span>
+        </div>
+        <div class="navbar-menu is-active">
+          <div class="navbar-end">
+            <a href="../index.html#about" class="navbar-item">About</a>
+            <a href="../index.html#blog-preview" class="navbar-item">Blogs</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <article id="blog" class="container is-max-widescreen">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <img
+              src="/assets/images/undraw_static-assets_di5m.svg"
+              alt="goofy clipart"
+            />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="page-heading">
+            <h1 class="title">The Magic of JavaScript</h1>
+            <span class="subtitle">
+              <h2>
+                E kite me pēhea te mahi a JavaScript hei whakamīharo i ngā
+                paetukutuku
+              </h2>
+              <p>
+                <em>See how JavaScript makes websites interactive and fun</em>
+              </p>
+            </span>
+            <span class="date-published">19 September 2025</span>
+          </div>
+          <div class="page-body content has-text-justified">
+            <p>
+              If you've ever wondered how websites become interactive and
+              dynamic, you're in the right place. JavaScript is the programming
+              language that brings websites to life!
+            </p>
+            <p>
+              Think of websites you use daily when you click a button and
+              something happens, when content updates without reloading the
+              page, or when you see smooth animations. That's JavaScript working
+              its magic!
+            </p>
+            <h3 class="title">
+              Think of Building a Website Like Building a House
+            </h3>
+            <div class="columns">
+              <div class="column is-half">
+                <h5 class="title">HTML: The Foundation & Structure</h5>
+                <p>
+                  HTML is like the foundation, walls, and basic structure of
+                  your house. It defines what rooms you have and where they are
+                </p>
+                <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+      &lt;title&gt;My House&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome Home!&lt;/h1&gt;
+    &lt;button id="light-switch"&gt;Turn on lights
+    &lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+              </div>
+              <div class="column is-half">
+                <h5 class="title">CSS: Interior Design & Decoration</h5>
+                <p>
+                  CSS is like the paint, furniture, and decoration that makes
+                  your house beautiful and comfortable.
+                </p>
+                <pre><code class="language-css">body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}</code></pre>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-8">
+                <h5 class="title">JavaScript: The Electrical System</h5>
+                <p>
+                  JavaScript is like the electrical system that powers your
+                  house. It makes things work when you interact with them.
+                </p>
+                <pre><code class="language-javascript">// When someone clicks the light switch
+document.getElementById('light-switch')
+  .addEventListener('click', function() {
+// Change the room's lighting
+    document.body.style.backgroundColor = '#ffffe0';
+
+// Update the button text
+    this.textContent = 'Lights are on! ✨';
+});</code></pre>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <div class="message is-success" id="demo-toggle-light">
+                  <div class="message-header">Try it yourself!</div>
+                  <div class="message-body">
+                    <button class="button is-link is-light" id="light-switch">
+                      Turn off lights 🌙
+                    </button>
+                    <script>
+                      document
+                        .getElementById('light-switch')
+                        .addEventListener('click', function () {
+                          document.body.classList.toggle('dark-mode')
+                          this.textContent = document.body.classList.contains(
+                            'dark-mode'
+                          )
+                            ? 'Turn on lights ☀️'
+                            : 'Turn off lights 🌙'
+                        })
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="title">Control Flow & Loops: Watering Plants</h3>
+            <p>
+              Every gardening matters, you make decisions based on conditions.
+              In JavaScript, we use <b>if/else statements</b>for this:
+            </p>
+            <h5 class="title has-text-centered">Watering Plants Decisions</h5>
+            <div class="columns">
+              <div class="column is-half">
+                <figure class="image">
+                  <img
+                    src="../assets/images/JS-DOM blog - if-else statement flowchart.jpg"
+                    alt="watering plants flowchart"
+                  />
+                </figure>
+              </div>
+              <div class="column is-half">
+                <pre><code class="language-javascript">
+// Check if we need watering plants
+let soilIsDry = true;
+if (soilIsDry) {
+  console.log("Watering plants...");
+} else {
+  console.log("No need to water.");
+}                
+              </code></pre>
+              </div>
+            </div>
+            <p class="has-text-centered">
+              Some watering a plant steps need to be repeated. That's where
+              <b>loops</b> come in handy
+            </p>
+            <div class="columns">
+              <div class="column is-7">
+                <figure class="image">
+                  <img
+                    src="../assets/images/JS-DOM blog- of-loop flowchart.jpg"
+                    alt="watering each plant flowchart"
+                  />
+                </figure>
+              </div>
+              <div class="column is-5">
+                <pre><code class="language-javascript">
+// using 'for...of' loop  for a set number of watering
+
+const plants = ["Fern", "Cactus", "Rose"];
+
+for (let plant of plants) {
+console.log("Watering " + plant);
+}
+                </code></pre>
+              </div>
+            </div>
+            <h3 class="title">DOM: Your Site's Remote</h3>
+            <p>
+              <b>The DOM (Document Object Model)</b> is like a TV remote control
+              for your webpage. Just as a remote lets you change channels,
+              adjust volume, and control your TV, the DOM lets JavaScript
+              interact with and change your webpage
+            </p>
+            <div class="columns is-centered">
+              <div class="column is-5">
+                <article class="message has-text-left">
+                  <div class="message-body">
+                    <h4 class="title">What Can You Control?</h4>
+                    <p>✅<b>Content: </b>Change text, add new elements</p>
+                    <p>✅<b>Styles: </b> Modify colors, sizes, positions</p>
+                    <p>
+                      ✅<b>Behavior: </b>Respond to clicks, form submissions
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <h5 class="title">Changing Website Content</h5>
+            <pre><code>// Select elements by class name
+const firstButton = document.querySelector('.btn');
+
+// Find an element and change its text
+document.querySelector('h1').textContent = 'Hello, World!';
+
+// Change element style
+title.style.color = 'red';
+
+// Add click event listener
+firstButton.addEventListener('click', () => {
+  alert('Button clicked!');
+});</code></pre>
+            <div class="columns is-centered">
+              <div class="column message is-success is-5 has-text-centered">
+                <div class="message-header">Try it yourself!</div>
+                <div class="message-body">
+                  <h3 id="demo-title">Kia ora Taiao!</h3>
+                  <button class="button is-danger is-light" id="demo-button">
+                    Click me!
+                  </button>
+                </div>
+
+                <script>
+                  document
+                    .getElementById('demo-button')
+                    .addEventListener('click', function () {
+                      document.getElementById('demo-title').textContent =
+                        'Hello, World!'
+                      document.getElementById('demo-title').style.color = 'red'
+                      this.textContent = 'Button clicked!'
+                      alert('Button clicked!')
+                    })
+                </script>
+              </div>
+            </div>
+            <h3 class="title">Organizing Data: Array vs Objects</h3>
+            <p>
+              JavaScript has two main ways to store multiple pieces of
+              information such as <b>Arrays</b> and <b>Objects</b>. Think of
+              them like different ways to organize information on your phone
+            </p>
+            <div class="columns">
+              <div class="column is-half">
+                <h4 class="title">Arrays: The Contact List</h4>
+                <p>
+                  Arrays are ordered lists where each item has a number that
+                  starting from 0. Perfect for when order matters
+                </p>
+                <h5 class="title has-text-centered">Grocery List</h5>
+                <pre><code class="language-javascript">// Creating a grocery list
+let groceryList = ['milk', 'bread', 'eggs', 'apples'];
+
+// Accessing items by position
+console.log(groceryList[0]); // 'milk' (first item)
+console.log(groceryList[1]); // 'bread' (second item)
+console.log(groceryList[3]); // 'apples' (fourth item)
+
+// Adding items to the list
+groceryList.push('bananas');
+console.log(groceryList);
+// ['milk', 'bread', 'eggs', 'apples', 'bananas']
+
+// How many items do we have?
+console.log(groceryList.length); // 5</code></pre>
+              </div>
+              <div class="column is-half">
+                <h4 class="title">Objects: The Contact Details</h4>
+                <p>
+                  Objects store related information with descriptive names. Like
+                  a contact with name, phone, email, etc.
+                </p>
+                <h5 class="title has-text-centered">Contact Details</h5>
+                <pre><code class="language-javascript">// Creating a contact entry
+let contact = {
+    name: 'Jonell Balanay',
+    phone: '123-456-7890',
+    email: 'jonell@email.com',
+};
+
+// Accessing information by name
+console.log(contact.name);    // 'Jonell Balanay'
+console.log(contact.phone);   // '123-456-7890'
+console.log(contact.email);   // 'jonell@email.com'
+
+// Alternative way to access
+console.log(contact['name']); // 'John Smith'
+
+// Adding new information
+contact.school= 'Dev Academy';
+console.log(contact.school); // 'Dev Academy'</code></pre>
+              </div>
+            </div>
+            <table class="table is-striped is-hoverable has-text-left mb-4">
+              <thead class="has-text-centered">
+                <tr>
+                  <th>Arrays</th>
+                  <th>Objects</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Use numbers to access items → groceryList[0]</td>
+                  <td>Use descriptive names → contact.name</td>
+                </tr>
+                <tr>
+                  <td>Good for lists of similar items</td>
+                  <td>
+                    Great for grouping related but in different information
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 class="title">Functions: Your Code's Best Friends</h3>
+            <p>
+              Functions are like recipes in programming. You write the
+              instructions once, give it a name, and then you can use that
+              recipe whenever you need it
+            </p>
+            <div class="columns">
+              <div class="column">
+                <article class="message is-success has-text-left">
+                  <div class="message-body">
+                    <h4 class="title mt-4">🔄 Reusable</h4>
+                    <p class="has-text-weight-bold">
+                      Write once, use many times
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="column">
+                <article class="message is-success has-text-left">
+                  <div class="message-body">
+                    <h4 class="title mt-4">📋 Organized</h4>
+                    <p class="has-text-weight-bold">
+                      Keep related code together
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="column">
+                <article class="message is-success has-text-left">
+                  <div class="message-body">
+                    <h4 class="title mt-4">🐛 Easier to Debug</h4>
+                    <p class="has-text-weight-bold">
+                      Fix problems in one place
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="column">
+                <article class="message is-success has-text-left">
+                  <div class="message-body">
+                    <h4 class="title mt-4">🤝 Shareable</h4>
+                    <p class="has-text-weight-bold">
+                      Other developers can use your functions
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <h4 class="title">Common function Examples</h4>
+            <pre><code class="language-javascript">//A function to say hello
+function sayHello() {
+  console.log("Hello!");
+}
+sayHello();
+
+// function that adds two numbers and returns the result
+function add(a, b) {
+  return a + b;
+}
+
+//A function to greet a person by name
+function greet(name) {
+  console.log("Hi, " + name + "!");
+}
+greet("Alice");
+
+//A function to get random number from minimum to maximum input
+function getRandomInt(min, max) {
+  min = Math.ceil(min)
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max - min) + min)
+}             </code></pre>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <footer class="footer">
+      <div class="container content is-max-widescreen">
+        <div class="columns">
+          <div class="column is-three-fifths">
+            <nav class="breadcrumb is-left" aria-label="breadcrumbs">
+              <ul>
+                <li class="mt-1"><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#blog-preview">Blogs</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="social-links column has-text-right">
+            <p>connect with me</p>
+            <div class="social-icons">
+              <nav class="breadcrumb is-small is-right">
+                <ul>
+                  <li class="mt-1">
+                    <a href="https://www.linkedin.com/in/itsjonellmb/"
+                      ><ion-icon name="logo-linkedin" size="large"></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/lowqualityloey"
+                      ><ion-icon name="logo-github" size="large"></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="mailto:itsjonellmb@gmail.com"
+                      ><ion-icon name="mail" size="large"></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <p class="has-text-centered mt-4">&copy; 2025 Jonell Balanay</p>
+      </div>
+    </footer>
+
+    <!--script for ionic icon-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- highlight.js scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/javascript.min.js"></script>
+    <script>
+      hljs.highlightAll()
+    </script>
+  </body>
+</html>

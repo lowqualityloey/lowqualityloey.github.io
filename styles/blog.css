@@ -51,6 +51,39 @@
 .page-body .title {
   color: #0b5048;
 }
+.page-body h3 .title {
+  margin-top: 4rem;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.dark-mode .navbar .navbar-brand .title {
+  color: #1a202c;
+}
+.dark-mode .card {
+  background-color: #2d3748 !important;
+  color: #e2e8f0;
+}
+
+.dark-mode .subtitle {
+  color: #e2e8f0;
+}
+.dark-mode .title {
+  color: #63b3ed;
+}
+
+#demo-toggle-light {
+  margin-top: 75%;
+}
 
 @media only screen and (max-width: 600px) {
   #blog {
@@ -71,5 +104,8 @@
   }
   .page-heading h1 {
     font-size: 2rem;
+  }
+  #demo-toggle-light {
+    margin-top: 0;
   }
 }
