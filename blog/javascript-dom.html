@@ -251,8 +251,6 @@ title.style.color = 'red';
 firstButton.addEventListener('click', () => {
   alert('Button clicked!');
 });</code></pre>
-
-            <!-- make interactive demo from sample above-->
             <div class="columns is-centered">
               <div class="column message is-success is-5 has-text-centered">
                 <div class="message-header">Try it yourself!</div>
@@ -276,6 +274,83 @@ firstButton.addEventListener('click', () => {
                 </script>
               </div>
             </div>
+            <h3 class="title">Organizing Data: Array vs Objects</h3>
+            <p>
+              JavaScript has two main ways to store multiple pieces of
+              information such as <b>Arrays</b> and <b>Objects</b>. Think of
+              them like different ways to organize information on your phone
+            </p>
+            <div class="columns">
+              <div class="column is-half">
+                <h4 class="title">Arrays: The Contact List</h4>
+                <p>
+                  Arrays are ordered lists where each item has a number that
+                  starting from 0. Perfect for when order matters
+                </p>
+                <h5 class="title has-text-centered">Grocery List</h5>
+                <pre><code class="language-javascript">// Creating a grocery list
+let groceryList = ['milk', 'bread', 'eggs', 'apples'];
+
+// Accessing items by position
+console.log(groceryList[0]); // 'milk' (first item)
+console.log(groceryList[1]); // 'bread' (second item)
+console.log(groceryList[3]); // 'apples' (fourth item)
+
+// Adding items to the list
+groceryList.push('bananas');
+console.log(groceryList);
+// ['milk', 'bread', 'eggs', 'apples', 'bananas']
+
+// How many items do we have?
+console.log(groceryList.length); // 5</code></pre>
+              </div>
+              <div class="column is-half">
+                <h4 class="title">Objects: The Contact Details</h4>
+                <p>
+                  Objects store related information with descriptive names. Like
+                  a contact with name, phone, email, etc.
+                </p>
+                <h5 class="title has-text-centered">Contact Details</h5>
+                <pre><code class="language-javascript">// Creating a contact entry
+let contact = {
+    name: 'Jonell Balanay',
+    phone: '123-456-7890',
+    email: 'jonell@email.com',
+};
+
+// Accessing information by name
+console.log(contact.name);    // 'Jonell Balanay'
+console.log(contact.phone);   // '123-456-7890'
+console.log(contact.email);   // 'jonell@email.com'
+
+// Alternative way to access
+console.log(contact['name']); // 'John Smith'
+
+// Adding new information
+contact.school= 'Dev Academy';
+console.log(contact.school); // 'Dev Academy'</code></pre>
+              </div>
+            </div>
+            <table class="table is-striped is-hoverable has-text-left mb-4">
+              <thead class="has-text-centered">
+                <tr>
+                  <th>Arrays</th>
+                  <th>Objects</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Use numbers to access items → groceryList[0]</td>
+                  <td>Use descriptive names → contact.name</td>
+                </tr>
+                <tr>
+                  <td>Good for lists of similar items</td>
+                  <td>
+                    Great for grouping related but in different information
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
