@@ -162,6 +162,53 @@ document.getElementById('light-switch')
                 </div>
               </div>
             </div>
+            <h3 class="title">Control Flow & Loops: Watering Plants</h3>
+            <p>
+             Every gardening matters, you make decisions based on conditions. In JavaScript, we use <b>if/else statements</b>for this:
+            </p>
+            <h5 class="title has-text-centered">Watering Plants Decisions</h5>
+            <div class="columns">
+            <div class="column is-half">
+              <figure class="image">
+                <img
+                  src="../assets/images/JS-DOM blog - if-else statement flowchart.jpg"
+                  alt="watering plants flowchart"
+                />
+              </figure>
+            </div>
+            <div class="column is-half">
+              <pre><code class="language-javascript">
+// Check if we need watering plants
+let soilIsDry = true;
+if (soilIsDry) {
+  console.log("Watering plants...");
+} else {
+  console.log("No need to water.");
+}                
+              </code></pre>
+            </div>
+          </div>
+          <p class="has-text-centered">Some watering a plant steps need to be repeated. That's where <b>loops</b> come in handy </p>
+          <div class="columns">
+            <div class="column is-7">
+              <figure class="image">
+                <img
+                  src="../assets/images/JS-DOM blog- of-loop flowchart.jpg"
+                  alt="watering each plant flowchart"
+                />
+              </figure>
+            </div>
+            <div class="column is-5">
+            <pre><code class="language-javascript">
+// using 'for...of' loop  for a set number of watering
+
+const plants = ["Fern", "Cactus", "Rose"];
+
+for (let plant of plants) {
+console.log("Watering " + plant);
+}
+                </code></pre>
+            </div>
           </div>
         </div>
       </div>
