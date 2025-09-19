@@ -142,10 +142,12 @@ document.getElementById('light-switch')
 });</code></pre>
               </div>
               <div class="column is-4 has-text-centered">
-                <div class="message is-info" id="demo-toggle-light">
+                <div class="message is-success" id="demo-toggle-light">
                   <div class="message-header">Try it yourself!</div>
                   <div class="message-body">
-                    <button id="light-switch">Turn off lights 🌙</button>
+                    <button class="button is-link is-light" id="light-switch">
+                      Turn off lights 🌙
+                    </button>
                     <script>
                       document
                         .getElementById('light-switch')
@@ -164,20 +166,21 @@ document.getElementById('light-switch')
             </div>
             <h3 class="title">Control Flow & Loops: Watering Plants</h3>
             <p>
-             Every gardening matters, you make decisions based on conditions. In JavaScript, we use <b>if/else statements</b>for this:
+              Every gardening matters, you make decisions based on conditions.
+              In JavaScript, we use <b>if/else statements</b>for this:
             </p>
             <h5 class="title has-text-centered">Watering Plants Decisions</h5>
             <div class="columns">
-            <div class="column is-half">
-              <figure class="image">
-                <img
-                  src="../assets/images/JS-DOM blog - if-else statement flowchart.jpg"
-                  alt="watering plants flowchart"
-                />
-              </figure>
-            </div>
-            <div class="column is-half">
-              <pre><code class="language-javascript">
+              <div class="column is-half">
+                <figure class="image">
+                  <img
+                    src="../assets/images/JS-DOM blog - if-else statement flowchart.jpg"
+                    alt="watering plants flowchart"
+                  />
+                </figure>
+              </div>
+              <div class="column is-half">
+                <pre><code class="language-javascript">
 // Check if we need watering plants
 let soilIsDry = true;
 if (soilIsDry) {
@@ -186,20 +189,23 @@ if (soilIsDry) {
   console.log("No need to water.");
 }                
               </code></pre>
+              </div>
             </div>
-          </div>
-          <p class="has-text-centered">Some watering a plant steps need to be repeated. That's where <b>loops</b> come in handy </p>
-          <div class="columns">
-            <div class="column is-7">
-              <figure class="image">
-                <img
-                  src="../assets/images/JS-DOM blog- of-loop flowchart.jpg"
-                  alt="watering each plant flowchart"
-                />
-              </figure>
-            </div>
-            <div class="column is-5">
-            <pre><code class="language-javascript">
+            <p class="has-text-centered">
+              Some watering a plant steps need to be repeated. That's where
+              <b>loops</b> come in handy
+            </p>
+            <div class="columns">
+              <div class="column is-7">
+                <figure class="image">
+                  <img
+                    src="../assets/images/JS-DOM blog- of-loop flowchart.jpg"
+                    alt="watering each plant flowchart"
+                  />
+                </figure>
+              </div>
+              <div class="column is-5">
+                <pre><code class="language-javascript">
 // using 'for...of' loop  for a set number of watering
 
 const plants = ["Fern", "Cactus", "Rose"];
@@ -208,6 +214,67 @@ for (let plant of plants) {
 console.log("Watering " + plant);
 }
                 </code></pre>
+              </div>
+            </div>
+            <h3 class="title">DOM: Your Site's Remote</h3>
+            <p>
+              <b>The DOM (Document Object Model)</b> is like a TV remote control
+              for your webpage. Just as a remote lets you change channels,
+              adjust volume, and control your TV, the DOM lets JavaScript
+              interact with and change your webpage
+            </p>
+            <div class="columns is-centered">
+              <div class="column is-5">
+                <article class="message has-text-left">
+                  <div class="message-body">
+                    <h4 class="title">What Can You Control?</h4>
+                    <p>✅<b>Content: </b>Change text, add new elements</p>
+                    <p>✅<b>Styles: </b> Modify colors, sizes, positions</p>
+                    <p>
+                      ✅<b>Behavior: </b>Respond to clicks, form submissions
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <h5 class="title">Changing Website Content</h5>
+            <pre><code>// Select elements by class name
+const firstButton = document.querySelector('.btn');
+
+// Find an element and change its text
+document.querySelector('h1').textContent = 'Hello, World!';
+
+// Change element style
+title.style.color = 'red';
+
+// Add click event listener
+firstButton.addEventListener('click', () => {
+  alert('Button clicked!');
+});</code></pre>
+
+            <!-- make interactive demo from sample above-->
+            <div class="columns is-centered">
+              <div class="column message is-success is-5 has-text-centered">
+                <div class="message-header">Try it yourself!</div>
+                <div class="message-body">
+                  <h3 id="demo-title">Kia ora Taiao!</h3>
+                  <button class="button is-danger is-light" id="demo-button">
+                    Click me!
+                  </button>
+                </div>
+
+                <script>
+                  document
+                    .getElementById('demo-button')
+                    .addEventListener('click', function () {
+                      document.getElementById('demo-title').textContent =
+                        'Hello, World!'
+                      document.getElementById('demo-title').style.color = 'red'
+                      this.textContent = 'Button clicked!'
+                      alert('Button clicked!')
+                    })
+                </script>
+              </div>
             </div>
           </div>
         </div>

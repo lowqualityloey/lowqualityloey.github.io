@@ -51,6 +51,9 @@
 .page-body .title {
   color: #0b5048;
 }
+.page-body h3 .title {
+  margin-top: 4rem;
+}
 
 pre {
   white-space: pre-wrap;
