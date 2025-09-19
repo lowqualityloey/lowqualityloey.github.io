@@ -141,18 +141,24 @@ document.getElementById('light-switch')
     this.textContent = 'Lights are on! ✨';
 });</code></pre>
               </div>
-              <div class="column is-3">
-                <h5 class="title">Try it yourself!</h5>
-                <div class="demo-turn-on-lights">
-                  <button id="light-switch">Turn on lights</button>
-                  <script>
-                    document
-                      .getElementById('light-switch')
-                      .addEventListener('click', function () {
-                        document.body.style.setProperty('background', '#ffffe0')
-                        this.textContent = 'Lights are on! ✨'
-                      })
-                  </script>
+              <div class="column is-4 has-text-centered">
+                <div class="message is-info" id="demo-toggle-light">
+                  <div class="message-header">Try it yourself!</div>
+                  <div class="message-body">
+                    <button id="light-switch">Turn off lights 🌙</button>
+                    <script>
+                      document
+                        .getElementById('light-switch')
+                        .addEventListener('click', function () {
+                          document.body.classList.toggle('dark-mode')
+                          this.textContent = document.body.classList.contains(
+                            'dark-mode'
+                          )
+                            ? 'Turn on lights ☀️'
+                            : 'Turn off lights 🌙'
+                        })
+                    </script>
+                  </div>
                 </div>
               </div>
             </div>

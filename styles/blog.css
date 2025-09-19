@@ -63,6 +63,24 @@ code {
   word-wrap: break-word;
 }
 
+.dark-mode .navbar .navbar-brand .title {
+  color: #1a202c;
+}
+.dark-mode .card {
+  background-color: #2d3748 !important;
+  color: #e2e8f0;
+}
+.dark-mode .subtitle {
+  color: #e2e8f0;
+}
+.dark-mode .title {
+  color: #63b3ed;
+}
+
+#demo-toggle-light {
+  margin-top: 75%;
+}
+
 @media only screen and (max-width: 600px) {
   #blog {
     margin-top: 8.5rem;
@@ -82,5 +100,8 @@ code {
   }
   .page-heading h1 {
     font-size: 2rem;
+  }
+  #demo-toggle-light {
+    margin-top: 0;
   }
 }
