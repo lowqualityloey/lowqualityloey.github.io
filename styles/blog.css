@@ -52,6 +52,17 @@
   color: #0b5048;
 }
 
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
 @media only screen and (max-width: 600px) {
   #blog {
     margin-top: 8.5rem;

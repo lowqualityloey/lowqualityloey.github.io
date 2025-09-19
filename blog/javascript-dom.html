@@ -15,6 +15,11 @@
     />
     <link href="../styles/main.css" rel="stylesheet" type="text/css" />
     <link href="../styles/blog.css" rel="stylesheet" type="text/css" />
+    <!--imported online css package-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css"
+    />
   </head>
 
   <body>
@@ -65,8 +70,92 @@
           </div>
           <div class="page-body content has-text-justified">
             <p>
-              <!-- Text her -->
+              If you've ever wondered how websites become interactive and
+              dynamic, you're in the right place. JavaScript is the programming
+              language that brings websites to life!
             </p>
+            <p>
+              Think of websites you use daily when you click a button and
+              something happens, when content updates without reloading the
+              page, or when you see smooth animations. That's JavaScript working
+              its magic!
+            </p>
+            <h3 class="title">
+              Think of Building a Website Like Building a House
+            </h3>
+            <div class="columns">
+              <div class="column is-half">
+                <h5 class="title">HTML: The Foundation & Structure</h5>
+                <p>
+                  HTML is like the foundation, walls, and basic structure of
+                  your house. It defines what rooms you have and where they are
+                </p>
+                <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+      &lt;title&gt;My House&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome Home!&lt;/h1&gt;
+    &lt;button id="light-switch"&gt;Turn on lights
+    &lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+              </div>
+              <div class="column is-half">
+                <h5 class="title">CSS: Interior Design & Decoration</h5>
+                <p>
+                  CSS is like the paint, furniture, and decoration that makes
+                  your house beautiful and comfortable.
+                </p>
+                <pre><code class="language-css">body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}</code></pre>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-8">
+                <h5 class="title">JavaScript: The Electrical System</h5>
+                <p>
+                  JavaScript is like the electrical system that powers your
+                  house. It makes things work when you interact with them.
+                </p>
+                <pre><code class="language-javascript">// When someone clicks the light switch
+document.getElementById('light-switch')
+  .addEventListener('click', function() {
+// Change the room's lighting
+    document.body.style.backgroundColor = '#ffffe0';
+
+// Update the button text
+    this.textContent = 'Lights are on! ✨';
+});</code></pre>
+              </div>
+              <div class="column is-3">
+                <h5 class="title">Try it yourself!</h5>
+                <div class="demo-turn-on-lights">
+                  <button id="light-switch">Turn on lights</button>
+                  <script>
+                    document
+                      .getElementById('light-switch')
+                      .addEventListener('click', function () {
+                        document.body.style.setProperty('background', '#ffffe0')
+                        this.textContent = 'Lights are on! ✨'
+                      })
+                  </script>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -109,19 +198,26 @@
             </div>
           </div>
         </div>
-
         <p class="has-text-centered mt-4">&copy; 2025 Jonell Balanay</p>
       </div>
     </footer>
-    <!-- this is a comment. -->
+
+    <!--script for ionic icon-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- highlight.js scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/javascript.min.js"></script>
+    <script>
+      hljs.highlightAll()
+    </script>
   </body>
 </html>
-<!--script for ionic icon-->
-<script
-  type="module"
-  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-></script>
-<script
-  nomodule
-  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-></script>
