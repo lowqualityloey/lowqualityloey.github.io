@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jonell Balanay - Web Developer & Tech Enthusiast from New Zealand. Read my blogs on web development at Dev Academy."
+    />
+    <title>Jonell's - Problem Solving</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icons/code-slash.svg"
+    />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/blog.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar is-fixed-top" role="navigation">
+      <div class="container is-max-widescreen">
+        <div class="navbar-brand">
+          <span class="navbar-item">
+            <ion-icon
+              name="qr-code"
+              size="large"
+              class="navbar-logo"
+            ></ion-icon>
+            <a href="../index.html" class="title is-4 mt-1"> Jonell Balanay</a>
+          </span>
+        </div>
+        <div class="navbar-menu is-active">
+          <div class="navbar-end">
+            <a href="../index.html#about" class="navbar-item">About</a>
+            <a href="../index.html#blog-preview" class="navbar-item">Blogs</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <article id="blog" class="container is-max-widescreen">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <img
+              src="/assets/images/undraw_solution-mindset_pit7.png"
+              alt="undraw_solution-mindset_pit7 clipart"
+            />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="page-heading">
+            <h1 class="title">Problem Solving</h1>
+            <span class="subtitle">
+              <h2>Te Whitiora i roto i ngā Tikanga Rongoā Raru</h2>
+              <p>
+                <em>Navigating through my problem-solving techniques</em>
+              </p>
+            </span>
+            <span class="date-published">27 September 2025</span>
+          </div>
+          <div class="page-body content has-text-justified">
+            <h3 class="title is-4">A Simple Problem That Was So Confusing…</h3>
+            <p>
+              I was messing around with JavaScript and got totally stuck trying
+              to figure out the difference between these two array methods -
+              <code class="language-javascript">.forEach()</code>
+              and <code class="language-javascript">.map()</code>. I went
+              googling stuff, asked AI to show me some examples, and just played
+              around with both on some basic arrays to see what would happen.
+            </p>
+            <p>
+              I felt pretty silly being stuck on something that seemed so basic
+              but when it finally clicked that
+              <code class="language-javascript">.forEach()</code> just does
+              stuff to your existing array (might change it, might not), while
+              <code class="language-javascript">.map()</code> actually creates a
+              whole new array through this callback function thing.
+            </p>
+            <p>
+              The whole experience taught me that you've really got to master
+              those fundamental concepts before diving into more advanced
+              techniques.
+            </p>
+
+            <h3 class="title is-4">Elegantly Solved a Problem</h3>
+            <p>
+              One of my assignments asked me to write a function called
+              <code class="language-javascript">flipflop</code>
+              that returns "FlipFlop" if a number is divisible by 15, "Flip" if
+              by 3, "Flop" if by 5, or the number itself otherwise.
+            </p>
+            <p>
+              At first, this looked like an ordinary conditional problem, but I
+              remembered from coding practice that when using divisibility
+              checks with multiple conditions, <em>order matters</em>. For
+              example, 15 is divisible by both 3 and 5 and all three, so the
+              most specific case (divisible by 15) needs to come first.
+            </p>
+            <div class="columns">
+              <div class="column is-half">
+                <p>
+                  <strong
+                    >So I started by outlining my logic using
+                    pseudocode:</strong
+                  >
+                </p>
+                <pre class="has-text-dark">
+                    <code class="language-javascript">IF number is divisible by 15, return "FlipFlop"
+ELSE IF number is divisible by 3, return "Flip"
+ELSE IF number is divisible by 5, return "Flop"
+ELSE return the original number</code></pre>
+              </div>
+              <div class="column is-half">
+                <p>
+                  <strong>Translating that to code was straightforward:</strong>
+                </p>
+
+                <pre
+                  class="has-text-dark"
+                ><code class="language-javascript">export function flipflop(numberParameter) {
+  if (numberParameter % 15 === 0) {
+    return 'FlipFlop'
+  } else if (numberParameter % 3 === 0) {
+    return 'Flip'
+  } else if (numberParameter % 5 === 0) {
+    return 'Flop'
+  }
+  return numberParameter
+}</code></pre>
+              </div>
+            </div>
+
+            <p>
+              I used pseudocode to map out my solution, put my conditions in the
+              right order, and tested it to make sure it worked. I felt good
+              about taking a step-by-step approach. The main takeaway? Planning
+              your logic clearly at the start leads to cleaner code and fewer
+              problems down the line.
+            </p>
+
+            <h3 class="title is-4">
+              Ranking My Coding Problem-Solving Strategies
+            </h3>
+
+            <table
+              class="table is-striped is-hoverable is-fullwidth has-text-left"
+            >
+              <thead>
+                <tr>
+                  <th>Technique</th>
+                  <th>Confidence Level</th>
+                  <th class="has-text-centered">Explanation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Pseudocode</strong></td>
+                  <td><span class="tag is-success">High</span></td>
+                  <td>
+                    It helps me plan code step-by-step and avoid confusion.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Trying something</strong></td>
+                  <td><span class="tag is-warning">Medium</span></td>
+                  <td>
+                    Sometimes I'm hesitant, but willing to experiment and learn
+                    from mistakes.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Rubber ducky method</strong></td>
+                  <td><span class="tag is-warning">Medium</span></td>
+                  <td>
+                    Explaining problems out loud helps, but I don't always
+                    remember to use it.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Reading error messages</strong></td>
+                  <td><span class="tag is-warning">Medium</span></td>
+                  <td>
+                    Becoming better at using errors to debug, not always clear
+                    at first, AI does explains at most.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Console.logging</strong></td>
+                  <td><span class="tag is-success">High</span></td>
+                  <td>
+                    Its essential for me for tracing bugs and understanding
+                    program flow.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Googling</strong></td>
+                  <td><span class="tag is-success">High</span></td>
+                  <td>
+                    My go-to for quick answers and documentation when I'm stuck.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Asking your peers for help</strong></td>
+                  <td><span class="tag is-danger">Low</span></td>
+                  <td>
+                    I usually try solo first, working to get more comfortable
+                    seeking help.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Asking coaches for help</strong></td>
+                  <td><span class="tag is-danger">Low</span></td>
+                  <td>
+                    I should ask for guidance more frequently to improve
+                    learning speed and task efficiency.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Improving your process with reflection</strong>
+                  </td>
+                  <td><span class="tag is-warning">Medium</span></td>
+                  <td>
+                    Useful for reviewing what worked and what didn't, but needs
+                    regular practice.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 class="title is-4">Overcoming Reluctance</h3>
+            <p>
+              I often feel reluctant to ask for help when I'm stuck on a coding
+              problem. Usually, I worry that my question might be too basic or
+              that I should be able to solve it myself. I end up spending a lot
+              of time trying to find the answer alone, which sometimes makes me
+              feel frustrated or slows down my progress.
+            </p>
+            <p>
+              To improve, I want to remind myself that asking for help is normal
+              and shows a willingness to learn. I plan to practise asking
+              questions earlier instead of waiting until I feel stuck.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <footer class="footer">
+      <div class="container content is-max-widescreen">
+        <div class="columns">
+          <div class="column is-three-fifths">
+            <nav class="breadcrumb is-left" aria-label="breadcrumbs">
+              <ul>
+                <li class="mt-1"><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#blog-preview">Blogs</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="social-links column has-text-right">
+            <p>connect with me</p>
+            <div class="social-icons">
+              <nav class="breadcrumb is-small is-right">
+                <ul>
+                  <li class="mt-1">
+                    <a href="https://www.linkedin.com/in/itsjonellmb/"
+                      ><ion-icon name="logo-linkedin" size="large"></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/lowqualityloey"
+                      ><ion-icon name="logo-github" size="large"></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="mailto:itsjonellmb@gmail.com"
+                      ><ion-icon name="mail" size="large"></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <p class="has-text-centered mt-4">&copy; 2025 Jonell Balanay</p>
+      </div>
+    </footer>
+    <!-- this is a comment. -->
+  </body>
+</html>
+<!--script for ionic icon-->
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
+<!-- highlight.js scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/css.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/javascript.min.js"></script>
+<script>
+  hljs.highlightAll()
+</script>
