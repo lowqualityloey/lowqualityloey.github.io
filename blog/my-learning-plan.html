@@ -61,84 +61,103 @@
             <span class="date-published">7 September 2025</span>
           </div>
           <div class="page-body content has-text-justified">
-            <article class="message is-info">
-              <div class="message-header">
-                What is your long-term goal or career pathway?
+            <button
+              class="js-modal-trigger button is-primary"
+              data-target="foundation-learning"
+            >
+              Foundation Learning Plan
+            </button>
+            <div id="foundation-learning" class="modal">
+              <div class="modal-background"></div>
+              <div class="modal-content">
+                <div class="box">
+                  <p class="title is-4">Foundation Learning Plan</p>
+
+                  <article class="message is-info">
+                    <div class="message-header">
+                      What is your long-term goal or career pathway?
+                    </div>
+                    <div class="message-body">
+                      My long-term goal is to work in a software development
+                      role that aligns with my passion, ideally in a hybrid
+                      working setup. I want to find a position that allows me to
+                      maintain a healthy work-life balance without constant
+                      stress over deadlines. If I settle comfortably into a
+                      role, I would like the flexibility to travel to places
+                      I’ve always wanted to explore while working remotely.
+                    </div>
+                  </article>
+                  <article class="message is-success">
+                    <div class="message-header">
+                      A description of your strengths and limitations when it
+                      comes to learning
+                    </div>
+                    <div class="message-body">
+                      I am highly focused and driven when I am engaged in work
+                      that interests me, especially when creativity and
+                      attention to detail are involved. However, I can get
+                      easily distracted or lose interest if I lose that focus or
+                      if the task becomes unenjoyable. Staying motivated
+                      requires that the work remains stimulating and meaningful
+                      for me.
+                    </div>
+                  </article>
+                  <article class="message is-warning">
+                    <div class="message-header">
+                      What skills (non-technical/human skills) would you like to
+                      see developed in yourself while at Dev Academy?
+                    </div>
+                    <div class="message-body">
+                      I want to build my confidence and improve my communication
+                      skills, as I sometimes feel hesitant to express my ideas
+                      and thoughts clearly. Additionally, I aim to develop
+                      stronger analytical skills and become more diligent and
+                      responsible in managing my work effectively.
+                    </div>
+                  </article>
+                  <article class="message is-danger">
+                    <div class="message-header">
+                      A commitment to manage your workload in this programme
+                    </div>
+                    <div class="message-body">
+                      <ul>
+                        <li>
+                          I manage my time using Toggl's Pomodoro technique,
+                          which helps me stay disciplined and focused by
+                          breaking work into intervals with regular breaks. I am
+                          conscious of respecting others around me, ensuring
+                          that I don’t disrupt fellow learners or facilitators
+                          while working.
+                        </li>
+                        <li>
+                          When things start to build up and feel overwhelming, I
+                          plan to pause and take breaks to avoid burnout. If
+                          needed, I won’t hesitate to reach out to facilitators
+                          for support.
+                        </li>
+                        <li>
+                          I commit to seeking help early whenever I face
+                          challenges, whether that means asking questions during
+                          sessions or approaching facilitators individually.
+                        </li>
+                        <li>
+                          I expect the facilitation team to provide clear
+                          guidance, timely feedback, and a supportive
+                          environment that encourages questions and continuous
+                          learning. From my experience so far, they have been
+                          great, and I hope that continues.
+                        </li>
+                        <li>
+                          I do not currently have scheduled block-out times for
+                          other commitments.
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
               </div>
-              <div class="message-body">
-                My long-term goal is to work in a software development role that
-                aligns with my passion, ideally in a hybrid working setup. I
-                want to find a position that allows me to maintain a healthy
-                work-life balance without constant stress over deadlines. If I
-                settle comfortably into a role, I would like the flexibility to
-                travel to places I’ve always wanted to explore while working
-                remotely.
-              </div>
-            </article>
-            <article class="message is-success">
-              <div class="message-header">
-                A description of your strengths and limitations when it comes to
-                learning
-              </div>
-              <div class="message-body">
-                I am highly focused and driven when I am engaged in work that
-                interests me, especially when creativity and attention to detail
-                are involved. However, I can get easily distracted or lose
-                interest if I lose that focus or if the task becomes
-                unenjoyable. Staying motivated requires that the work remains
-                stimulating and meaningful for me.
-              </div>
-            </article>
-            <article class="message is-warning">
-              <div class="message-header">
-                What skills (non-technical/human skills) would you like to see
-                developed in yourself while at Dev Academy?
-              </div>
-              <div class="message-body">
-                I want to build my confidence and improve my communication
-                skills, as I sometimes feel hesitant to express my ideas and
-                thoughts clearly. Additionally, I aim to develop stronger
-                analytical skills and become more diligent and responsible in
-                managing my work effectively.
-              </div>
-            </article>
-            <article class="message is-danger">
-              <div class="message-header">
-                A commitment to manage your workload in this programme
-              </div>
-              <div class="message-body">
-                <ul>
-                  <li>
-                    I manage my time using Toggl's Pomodoro technique, which
-                    helps me stay disciplined and focused by breaking work into
-                    intervals with regular breaks. I am conscious of respecting
-                    others around me, ensuring that I don’t disrupt fellow
-                    learners or facilitators while working.
-                  </li>
-                  <li>
-                    When things start to build up and feel overwhelming, I plan
-                    to pause and take breaks to avoid burnout. If needed, I
-                    won’t hesitate to reach out to facilitators for support.
-                  </li>
-                  <li>
-                    I commit to seeking help early whenever I face challenges,
-                    whether that means asking questions during sessions or
-                    approaching facilitators individually.
-                  </li>
-                  <li>
-                    I expect the facilitation team to provide clear guidance,
-                    timely feedback, and a supportive environment that
-                    encourages questions and continuous learning. From my
-                    experience so far, they have been great, and I hope that
-                    continues.
-                  </li>
-                  <li>
-                    I do not currently have scheduled block-out times for other
-                    commitments.
-                  </li>
-                </ul>
-              </div>
-            </article>
+              <button class="modal-close is-large" aria-label="close"></button>
+            </div>
           </div>
         </div>
       </div>
@@ -197,3 +216,5 @@
   nomodule
   src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
 ></script>
+<!--link import for modal ../assets/js/script.js-->
+<script src="../assets/js/script.js"></script>
